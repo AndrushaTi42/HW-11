@@ -5,7 +5,7 @@ class Homework {
         task3();
     }
 
-    public static void separationTask() {
+    public static void divideTask() {
         System.out.println("==============================");
     }
 
@@ -23,11 +23,11 @@ class Homework {
     }
 
     public static void task1() {
-        separationTask();
+        divideTask();
         System.out.println("task №1");
         int year = 2028;
         checkLeapYear(year);
-        separationTask();
+        divideTask();
     }
 
 
@@ -49,7 +49,7 @@ class Homework {
         int osType = 0;
         int deviceYear = 2018;
         chooseApp(osType, deviceYear);
-        separationTask();
+        divideTask();
     }
 
     //task3
@@ -71,9 +71,9 @@ class Homework {
 
     public static void task3() {
         System.out.println("task №3");
-        int deliveryDistance = 15;
+        int deliveryDistance = 95;
         calculationDistance(deliveryDistance);
-        separationTask();
+        divideTask();
     }
 
 }
