@@ -40,13 +40,14 @@ class Homework {
 
 
     public static void chooseApp(int osType, int year) {
-        if (osType == 0 && year < 2015) {
+        int currentYear = LocalDate.now().getYear();
+        if (osType == 0 && year < currentYear) {
             System.out.println("Установите облегченную версию приложения для iOS по ссылке");
-        } else if (osType == 0 && year >= 2015) {
+        } else if (osType == 0 && year >= currentYear) {
             System.out.println("Установите версию приложения для iOS по ссылке");
-        } else if (osType == 1 && year < 2015) {
+        } else if (osType == 1 && year < currentYear) {
             System.out.println("Установите облегченную версию приложения для Android по ссылке");
-        } else if (osType == 1 && year >= 2015) {
+        } else if (osType == 1 && year >= currentYear) {
             System.out.println("Установите версию приложения для Android по ссылке");
         }
     }
@@ -54,10 +55,10 @@ class Homework {
     public static void task2() {
 
         System.out.println("task №2");
-        int currentYear = LocalDate.now().getYear();
-//        LocalDate date = LocalDate.of(2026, 3, 12);
-//        int currentYear = date.getYear();
-        int osType = 1;
+
+        LocalDate date = LocalDate.of(2026, 3, 12);
+        int currentYear = date.getYear();
+        int osType = 0;
         chooseApp(osType, currentYear);
         divideTask();
     }
