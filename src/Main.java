@@ -57,9 +57,9 @@ class Homework {
         System.out.println("task №2");
 
         LocalDate date = LocalDate.of(2026, 3, 12);
-        int currentYear = date.getYear();
+        int makesOfYear = date.getYear();
         int osType = 0;
-        chooseApp(osType, currentYear);
+        chooseApp(osType, makesOfYear);
         divideTask();
     }
 
