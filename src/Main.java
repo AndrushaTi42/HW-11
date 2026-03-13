@@ -54,10 +54,11 @@ class Homework {
     public static void task2() {
 
         System.out.println("task №2");
-        LocalDate date = LocalDate.of(2026, 3, 12);
-        int year = date.getYear();
+        int currentYear = LocalDate.now().getYear();
+//        LocalDate date = LocalDate.of(2026, 3, 12);
+//        int currentYear = date.getYear();
         int osType = 1;
-        chooseApp(osType, year);
+        chooseApp(osType, currentYear);
         divideTask();
     }
 
